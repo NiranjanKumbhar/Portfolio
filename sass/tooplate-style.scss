@@ -132,7 +132,8 @@ b, strong {
 
 // ANIMATED TEXT
 .animated {
-    position: relative;
+	position: relative;
+
 }
 
 .animated-info {
@@ -157,17 +158,19 @@ b, strong {
     top: 0;
     right: 0;
     left: 0;
-    animation: BottomTotop 6s linear infinite 0s;
+	animation: BottomTotop 4s linear infinite 0s;
+	// &:nth-child(n+1){
+	// 	animation-delay: 4s;
+	// }
+	// &:nth-child(2n+2) {
+    //     animation-delay: 3s ;
+	// }
 	
-	/*
-	&:nth-child(2n+2) {
-        animation-delay: n* 2s ;
-	}
-	
-    &:nth-child(3n+3) {
-        animation-delay: 4s;
-	}
-	*/
+    // &:nth-child(3n+3) {
+    //     animation-delay: 4s;
+	// }
+
+
 	&:nth-child(1) {
         animation-delay: 1s;
 	}
@@ -180,18 +183,14 @@ b, strong {
 	&:nth-child(4) {
         animation-delay: 4s;
 	}
-
-	/*@for $i from 1 to 10 {
-		&:nth-child(#{$i}) { animation-delay: $i * 2s; }
-	  }*/
 }
 
 @keyframes BottomTotop {
     0% { opacity: 0; }
-    5% { opacity: 0; transform: translateY(5px); }
+    5% { opacity: 0; transform: translateY(25px); }
     10% { opacity: 1; transform: translateY(0px); }
     25% { opacity: 1; transform: translateY(0px); }
-    30% { opacity: 0; transform: translateY(5px); }
+    30% { opacity: 0; transform: translateY(25px); }
     80% { opacity: 0; }
     100% { opacity: 0; }
 }
