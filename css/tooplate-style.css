@@ -119,7 +119,7 @@ b, strong {
 }
 
 .animated-item {
-  font-size: 36px;
+  font-size: 40px;
   line-height: inherit;
   display: inline;
   opacity: 0;
@@ -144,16 +144,16 @@ b, strong {
   animation-delay: 0s;
 }
 :nth-child(2n) {
-  animation-delay: 0.5s;
-}
-:nth-child(3n) {
   animation-delay: 1s;
 }
-:nth-child(4n) {
+:nth-child(3n) {
   animation-delay: 1.5s;
 }
-:nth-child(5n) {
+:nth-child(4n) {
   animation-delay: 2s;
+}
+:nth-child(5n) {
+  animation-delay: 4s;
 }
 :nth-child(6n) {
   animation-delay: 2.5s;
